@@ -1,0 +1,134 @@
+@media (max-width: 768px) {
+    /* Estilos para dispositivos con ancho máximo de 768px (tabletas y móviles) */
+    .list-group-item {
+        width: 100%; /* Ajustar el ancho de los elementos de la lista */
+    }
+}
+
+ /* Estilos personalizados */
+ body {
+    background-color: #f0f5ff;
+    color: #333;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.producto-info h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.precio-normal {
+    font-size: 1.2rem;
+}
+
+.precio-con-descuento {
+    font-size: 1.2rem;
+    color: #ff5733; /* Naranja oscuro */
+}
+
+.stock {
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Azul */
+    border-color: #007bff; /* Azul */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+    border-color: #0056b3; /* Azul más oscuro */
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Resaltar enfoque */
+}
+
+.modal-content {
+    background-color: #fff; /* Fondo blanco */
+}
+
+.modal-title {
+    color: #333; /* Texto oscuro */
+}
+
+.modal-body p {
+    margin-bottom: 1rem;
+}
+
+.list-group-item.active {
+    background-color: #007bff; /* Azul */
+    border-color: #007bff; /* Azul */
+}
+
+.list-group-item.active:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+    border-color: #0056b3; /* Azul más oscuro */
+}
+
+.list-group-item {
+    border-color: #dee2e6; /* Gris claro */
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa; /* Gris más claro */
+}
+
+#mensajeExito {
+    position: fixed;
+    top: 70px; /* Ajusta la posición vertical según tus necesidades */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #d4edda; /* Color de fondo verde */
+    color: #155724; /* Color de texto verde oscuro */
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#mensajeExito.fade.show {
+    animation: fadeInOut 3s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.valoracion-info {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.valoracion-info i {
+    margin-right: 2px;
+}
+
+.valoracion-info p {
+    margin-left: 5px;
+    margin-bottom: 0;
+}

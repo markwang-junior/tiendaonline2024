@@ -1,0 +1,84 @@
+/* Ajustes para la imagen del carrusel */
+.carousel-item img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción de aspecto */
+    object-fit: contain; /* La imagen se ajusta para caber dentro del contenedor sin recortar */
+    margin-bottom: 20px; /* Agrega margen inferior para separar la imagen principal de las miniaturas */
+}
+
+/* Estilos para las miniaturas */
+.thumbnail {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* Ajustes para el contenedor de miniaturas */
+#thumbnailRow {
+    justify-content: center;
+}
+
+#btnScrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 99;
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    font-size: 24px; /* Tamaño de la fuente del icono */
+    display: flex; /* Mostrar el botón como una caja flexible */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    transition: background-color 0.3s ease-in-out; /* Transición de color de fondo */
+}
+
+#btnScrollToTop:hover {
+    background-color: #0056b3; /* Cambiar el color de fondo al pasar el ratón */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333; /* Color del texto */
+    font-family: 'Arial', sans-serif; /* Fuente */
+}
+
+h1 {
+    font-size: 28px; /* Tamaño del encabezado principal */
+}
+
+h2 {
+    font-size: 28px; /* Tamaño del encabezado secundario */
+}
+
+h3 {
+    font-size: 25px; /* Tamaño del encabezado terciario */
+}
+
+p {
+    color: #555; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.alert-animation {
+    animation: fadeinout 2s forwards;
+}
+
+@keyframes fadeinout {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
